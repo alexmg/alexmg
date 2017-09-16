@@ -7,7 +7,7 @@ Tags:
 ---
 As Travis outlined in his recent [post](http://www.paraesthesia.com/archive/2015/02/10/update-on-autofac-and-aspnet-vnext/), we've been hard at work getting Autofac ready for ASP.NET 5.0 and the new Core CLR. The 4.0.0-alpha1 release of the [core](https://www.nuget.org/packages/Autofac) library and [integration](https://www.nuget.org/packages/Autofac.Dnx) for ASP.NET 5.0 are now available on NuGet. The packages can be used with Visual Studio 2015 CTP 6 and the 1.0.0-beta3 release of ASP.NET 5.0.
 
-##Autofac
+## Autofac
 
 The primary objective in 4.0 was to add support for Core CLR and the new dependency injection (DI) abstraction in DNX (more on this later). At this point in time the API of the Autofac library has not been changed from the 3.5.2 release. Adding support for the Core CLR without introducing breaking changes was made easier by the fact that we had previously migrated to a PCL. The constraints on the available .NET Framework surface area imposed by the chosen PCL targets meant that we didn't use lots of dependencies that are now only available in the full CLR.
 
@@ -15,7 +15,7 @@ In this release we support the `aspnet50`, `aspnetcore50` and `portable-net45+wi
 
 The existing integration pacakges on NuGet are all capped as requiring an Autofac version less than 4.0 so the lack of strong naming will not be a problem for those. This version restriction was intentionally imposed as we wanted to leave the option of introducing breaking changes without having existing integrations attempt to upgrade to 4.0. There are some challenging enhancements on the backlog so the introduction of breaking changes in the API between now and the final 4.0 release is a possibility. Don't worry, we aren't talking about anything drastic.
 
-##Autofac.Dnx
+## Autofac.Dnx
 
 This is a new package and you can think of it as the ASP.NET integration for the moment. The DI support in previous versions of ASP.NET differed across individual frameworks such as MVC, Web API and SignalR. Each framework exposed a different DI abstraction and as a result we had to create different integrations for each. These frameworks were released at different times and were created by different teams, but the end result was a bit of mess when it came to DI support.
 
@@ -29,7 +29,7 @@ The name change by Microsoft was made after beta3 but we decided to adopt the DN
 
 You may have noticed there is already a `Microsoft.Framework.DependencyInjection.Autofac` package on the ASP.NET vNext MyGet feed. That package is only temporary and was used by the team to start testing their DI abstraction. It's not Microsoft attempting to take over the implementation and maintenance of the different DI containers. That particular package is built against Autofac 3.3.0 and does not support the Core CLR. The 4.0.0-alpha1 packages we have released today will run on Core CLR.
 
-##Getting started
+## Getting started
 
 The easiest way to get started with the new bits is to install Visual Studio 2015 CTP 6. Once that is done create a new ASP.NET Web Application using the provided template and select ASP.NET 5 Preview Web API. In this example we are going to wire up Autofac to a Web API controller. Now that MVC and Web API have been unified the same process can be used when building a view based controller.
 
