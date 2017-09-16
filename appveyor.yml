@@ -1,0 +1,10 @@
+branches:
+  only:
+    - master
+
+environment:
+  netlify_token:
+    secure: ZGOJ26jVYrpKMibwHe4PW3dY2jm/b6ou+TVEMyA3/tvqhjHU7pw8VnEezlh4deBw75FiFF3IT5sG9aRnMwqxdj+KTPvC6jAqHfzfIXDB29Y=
+
+build_script:
+  - ps: .\build.ps1 -Target "AppVeyor"

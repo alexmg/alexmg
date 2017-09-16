@@ -1,0 +1,16 @@
+i.brand {
+    margin-right: 6px;
+}
+
+img.gravatar {
+    width:150px;
+    border-radius:50%;
+}
+
+img.fit {
+    max-width: 100%;
+}
+
+ul.web-links {
+    margin: 15px;
+}

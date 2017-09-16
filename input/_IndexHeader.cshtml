@@ -1,0 +1,12 @@
+<div class="site-heading">
+    @if(Context.String(BlogKeys.Title) != null)
+    {
+        <h1>@Context.String(BlogKeys.Title)</h1>
+    }
+    <img class="gravatar" src="/images/gravatar.jpg" title="Alex Meyer-Gleaves">
+    @if(Context.String(BlogKeys.Intro) != null)
+    {            
+        <span class="subheading">@Context.String(BlogKeys.Intro)</span>
+    }
+    @Html.Partial("_SocialLinks")
+</div>
