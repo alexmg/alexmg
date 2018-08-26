@@ -191,7 +191,7 @@ var instance = lazy.Value; // Lazy returns Decorator decorating Implementor.
 
 ## Decorator lifetimes
 
-It is not possible to explicitly define the lifetime of a decorator as they inherit the lifetime of the service that they decorate. In fact, the decorator regsitration methods all return `void` to prevent invalid configuration from being applied.
+It is not possible to explicitly define the lifetime of a decorator as they inherit the lifetime of the service that they decorate. In fact, the decorator registration methods all return `void` to prevent invalid configuration from being applied.
 
 ```cs
 // The implementation is registered as InstancePerDependency.
