@@ -1,11 +1,11 @@
 @{
     var links = new List<dynamic>();
-    links.Add(new { Title = "Twitter", Url = "https://twitter.com/ameyergleaves", Icon = "twitter" });
-    links.Add(new { Title = "GitHub", Url = "https://github.com/alexmg", Icon = "github" });
-    links.Add(new { Title = "Keybase", Url = "https://keybase.io/alexmg", Icon = "key" });
-    links.Add(new { Title = "Stack Overflow", Url = "https://stackoverflow.com/users/335467/alex-meyer-gleaves", Icon = "stack-overflow" });
-    links.Add(new { Title = "LinkedIn", Url = "https://www.linkedin.com/in/alexmeyergleaves", Icon = "linkedin" });
-    links.Add(new { Title = "Google+", Url = "https://plus.google.com/+AlexMeyerGleaves", Icon = "google-plus" });
+    links.Add(new { Title = "Twitter", Url = "https://twitter.com/ameyergleaves", Icon = "fab fa-twitter" });
+    links.Add(new { Title = "GitHub", Url = "https://github.com/alexmg", Icon = "fab fa-github" });
+    links.Add(new { Title = "Keybase", Url = "https://keybase.io/alexmg", Icon = "fa fa-key" });
+    links.Add(new { Title = "Stack Overflow", Url = "https://stackoverflow.com/users/335467/alex-meyer-gleaves", Icon = "fab fa-stack-overflow" });
+    links.Add(new { Title = "LinkedIn", Url = "https://www.linkedin.com/in/alexmeyergleaves", Icon = "fab fa-linkedin" });
+    links.Add(new { Title = "Google+", Url = "https://plus.google.com/+AlexMeyerGleaves", Icon = "fab fa-google-plus" });
 }
 
 <ul class="list-inline text-center web-links">
@@ -15,7 +15,7 @@
             <a href="@link.Url" title="@link.Title" data-toggle="tooltip" data-animate="true" data-delay='{"show":"500", "hide":"0"}'>
                 <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-@link.Icon fa-stack-1x fa-inverse"></i>
+                    <i class="@link.Icon fa-stack-1x fa-inverse"></i>
                 </span>
             </a>
         </li>
