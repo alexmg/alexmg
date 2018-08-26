@@ -1,5 +1,14 @@
 /*
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-/*.woff
-    Access-Control-Allow-Origin: *
-    Content-Type: application/font-woff
+
+/assets/fonts/*.woff
+  Access-Control-Allow-Origin: *
+  Content-Type: application/font-woff
+
+/assets/fonts/*.woff2
+  Access-Control-Allow-Origin: *
+  Content-Type: application/font-woff2
+
+/assets/fonts/*.ttf
+  Access-Control-Allow-Origin: *
+  Content-Type: application/font-ttf
