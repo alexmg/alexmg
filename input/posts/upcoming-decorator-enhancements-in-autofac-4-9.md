@@ -1,5 +1,5 @@
 Title: "Upcoming decorator enhancements in Autofac 4.9"
-Published: 2018-08-26 21:20:00
+Published: 2018-08-26
 Tags:
   - autofac
 ---
