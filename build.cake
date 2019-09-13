@@ -1,5 +1,8 @@
-#tool nuget:?package=Wyam
-#addin nuget:?package=Cake.Wyam
+#tool "nuget:https://api.nuget.org/v3/index.json?package=Wyam&version=2.2.7"
+#addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Wyam&version=2.2.7"
+#addin "nuget:https://api.nuget.org/v3/index.json?package=NetlifySharp&version=0.1.0"
+
+using NetlifySharp;
 
 //////////////////////////////////////////////////////////////////////
 // ARGUMENTS
@@ -38,29 +41,23 @@ Task("Preview")
 Task("Debug")
     .Does(() =>
     {
-        StartProcess("../Wyam/src/clients/Wyam/bin/Debug/wyam.exe",
-            "-a \"../Wyam/src/**/bin/Debug/*.dll\" -r \"blog -i\" -t \"../Wyam/themes/Blog/CleanBlog\" -p -w");
+        DotNetCoreBuild("../Wyam/tests/integration/Wyam.Examples.Tests/Wyam.Examples.Tests.csproj");        
+        DotNetCoreExecute("../Wyam/tests/integration/Wyam.Examples.Tests/bin/Debug/netcoreapp2.1/Wyam.dll",
+            "-a \"../Wyam/tests/integration/Wyam.Examples.Tests/bin/Debug/netcoreapp2.1/**/*.dll\" -r \"blog -i\" -t \"../Wyam/themes/Blog/CleanBlog\" -pw --attach");
     });
 
-Task("Mono")
+Task("Netlify")
     .Does(() =>
     {
-        StartProcess(@"c:\Program Files\Mono\bin\mono.exe", "../Wyam/src/clients/Wyam/bin/Debug/wyam.exe " +
-            "-a \"../Wyam/src/**/bin/Debug/*.dll\" -r \"blog -i\" -t \"../Wyam/themes/Blog/CleanBlog\" -p --verbose");
-    });
-
-Task("Deploy")
-    .Does(() =>
-    {
-        string variable = "netlify_token";
-        string token = EnvironmentVariable(variable);
-        if (string.IsNullOrEmpty(token))
+        string netlifyToken = EnvironmentVariable("netlify_token");
+        if (string.IsNullOrEmpty(netlifyToken))
         {
-            throw new Exception("Could not get " + variable + " environment variable");
+            throw new Exception("Could not get Netlify token environment variable");
         }
-        
-        Zip("./output", "output.zip", "./output/**/*");
-        StartProcess("curl", "--header \"Content-Type: application/zip\" --header \"Authorization: Bearer " + token + "\" --data-binary \"@output.zip\" --url https://api.netlify.com/api/v1/sites/alexmg.netlify.com/deploys");
+
+        Information("Deploying output to Netlify");
+        var client = new NetlifyClient(netlifyToken);
+        client.UpdateSite("alexmg.netlify.com", MakeAbsolute(Directory("./output")).FullPath).SendAsync().Wait();
     });
     
 //////////////////////////////////////////////////////////////////////
@@ -72,7 +69,7 @@ Task("Default")
     
 Task("AppVeyor")
     .IsDependentOn("Build")
-    .IsDependentOn("Deploy");
+    .IsDependentOn("Netlify");
 
 //////////////////////////////////////////////////////////////////////
 // EXECUTION
