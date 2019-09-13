@@ -1,4 +1,7 @@
-os: Ubuntu1804
+image: Visual Studio 2019
+
+init:
+  - dotnet nuget locals all --clear
 
 branches:
   only:
