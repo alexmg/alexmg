@@ -1,4 +1,4 @@
-os: Visual Studio 2019
+os: Ubuntu 1804
 
 branches:
   only:
