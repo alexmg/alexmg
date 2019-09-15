@@ -50,7 +50,7 @@ Task("Debug")
 Task("Netlify")
     .Does(() =>
     {
-        string netlifyToken = EnvironmentVariable("netlify_token");
+        string netlifyToken = EnvironmentVariable("NETLIFY_TOKEN");
         if (string.IsNullOrEmpty(netlifyToken))
         {
             throw new Exception("Could not get Netlify token environment variable");
@@ -68,7 +68,7 @@ Task("Netlify")
 Task("Default")
     .IsDependentOn("Preview");    
     
-Task("AppVeyor")
+Task("BuildServer")
     .IsDependentOn("Build")
     .IsDependentOn("Netlify");
 

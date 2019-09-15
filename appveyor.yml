@@ -5,11 +5,11 @@ branches:
     - master
 
 environment:
-  netlify_token:
+  NETLIFY_TOKEN:
     secure: ZGOJ26jVYrpKMibwHe4PW3dY2jm/b6ou+TVEMyA3/tvqhjHU7pw8VnEezlh4deBw75FiFF3IT5sG9aRnMwqxdj+KTPvC6jAqHfzfIXDB29Y=
 
 init:
   - dotnet --info
 
 build_script:
-  - ps: .\build.ps1 -Target "AppVeyor"
+  - ps: .\build.ps1 -Target "BuildServer"
