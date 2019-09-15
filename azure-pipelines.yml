@@ -1,6 +1,11 @@
 trigger:
 - master
-steps:
+
+jobs:
+- job: BuildAndDeploy
+  pool:
+    vmImage: 'windows-2019'
+  steps:
   - script: build -target BuildServer
     env:
       NETLIFY_TOKEN: $(NETLIFY_TOKEN)
