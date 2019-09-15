@@ -22,7 +22,7 @@ Task("Build")
             Recipe = "Blog",
             Theme = "CleanBlog",
             UpdatePackages = true,
-            Verbose = true
+            Verbose = false
         });        
     });
     
