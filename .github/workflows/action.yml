@@ -23,4 +23,6 @@ jobs:
       - name: Build and deploy
         env:
           NETLIFY_TOKEN: ${{ secrets.NetlifyToken }}
+          DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
+          NUGET_XMLDOC_MODE: skip
         run: build -target BuildServer
