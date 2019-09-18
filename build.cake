@@ -36,7 +36,7 @@ Task("Preview")
             UpdatePackages = true,
             Preview = true,
             Watch = true
-        });        
+        });
     });
 
 Task("Debug")
@@ -66,7 +66,7 @@ Task("Netlify")
 //////////////////////////////////////////////////////////////////////
 
 Task("Default")
-    .IsDependentOn("Preview");    
+    .IsDependentOn("Preview");
     
 Task("BuildServer")
     .IsDependentOn("Build")
