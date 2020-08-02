@@ -1,7 +1,0 @@
-Settings[Keys.Host] = "alexmg.com";
-Settings[Keys.LinksUseHttps] = true;
-Settings[BlogKeys.Title] = "Alex Meyer-Gleaves";
-Settings[BlogKeys.Description] = "The personal blog of Alex Meyer-Gleaves";
-Settings[BlogKeys.Intro] = "[ \"Software Architect\", \"Open Source Contributor\", \"Code Herder\" ]";
-Settings[BlogKeys.NetlifyRedirects] = true;
-Settings[BlogKeys.MetaRefreshRedirects] = false;

@@ -1,0 +1,7 @@
+Host: alexmg.dev
+SiteTitle: Alex Meyer-Gleaves
+Description: The personal blog of Alex Meyer-Gleaves
+LinksUseHttps: true
+NetlifyRedirects: true
+MetaRefreshRedirects: false
+Image: /img/header.jpg

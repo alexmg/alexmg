@@ -4,25 +4,24 @@ on:
   push:
     branches:
       - master
-    paths:
-      - '*'
-      - '!/drafts/*'
+    paths-ignore:
+      - README.md
+      - /drafts/*
 
 jobs:
   build:
-    name: Build and Deploy
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
+      with:
+        submodules: true
 
-      - name: Setup .NET Core
-        uses: actions/setup-dotnet@v1
-        with:
-          dotnet-version: 2.2.401
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.302
 
-      - name: Build and deploy
-        env:
-          NETLIFY_TOKEN: ${{ secrets.NetlifyToken }}
-          DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
-          NUGET_XMLDOC_MODE: skip
-        run: build -target BuildServer
+    - name: Deploy
+      env:
+        NETLIFY_TOKEN: ${{ secrets.NETLIFYTOKEN }}
+      run: dotnet run -- deploy

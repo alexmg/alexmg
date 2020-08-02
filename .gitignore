@@ -1,10 +1,9 @@
 [Pp]ackages/
 [Tt]ools/*
 [Oo]utput/
+bin/
+obj/
 .vs/
-nuget.exe
+.vscode/
 *.zip
 /debug.log
-/*.packages.xml
-/*.wyam.hash
-/*.wyam.dll
