@@ -2,4 +2,4 @@
   from = "https://alexmg.com/*"
   to = "https://alexmg.dev/:splat"
   status = 301
-  force = true
+  force = false
