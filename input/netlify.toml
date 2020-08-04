@@ -11,6 +11,12 @@
   force = true
 
 [[redirects]]
+  from = "https://alexmg.com/tags/*"
+  to = "https://alexmg.dev/tags/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "https://alexmg.com/*"
   to = "https://alexmg.dev/posts/:splat"
   status = 301
