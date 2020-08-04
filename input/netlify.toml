@@ -1,5 +1,11 @@
 [[redirects]]
-  from = "https://alexmg.com/*"
-  to = "https://alexmg.dev/:splat"
+  from = "https://alexmg.com/posts/*"
+  to = "https://alexmg.dev/posts/:splat"
   status = 301
-  force = false
+  force = true
+
+[[redirects]]
+  from = "https://alexmg.com/*"
+  to = "https://alexmg.dev/posts/:splat"
+  status = 301
+  force = true
