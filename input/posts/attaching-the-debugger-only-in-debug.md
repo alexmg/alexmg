@@ -2,7 +2,7 @@ Title: "Attaching the Debugger only in Debug"
 Published: 2010-06-16 01:41:48
 RedirectFrom: attaching-the-debugger-only-in-debug
 Tags:
-  - c
+  - c#
   - visual-studio
 ---
 I noticed an [article](http://feedproxy.google.com/~r/Vistadb/~3/X6jYbiDOjFQ/post.aspx) on the [Infinite Codex](http://infinitecodex.com/) blog that demonstrates how to debug CLR Stored Procedures. The example uses a `#if` [preprocessor directive](http://msdn.microsoft.com/en-us/library/ed8yd1ha.aspx) to compile the debugging code only if the `DEBUG` symbol is defined. Personally, I find using the `#if` directive makes your code look rather ugly, and accidentally including code inside the directive that you did not intend to becomes a real possibility. My preferred solution is to use the `ConditionalAttribute` to refactor such code out into a separate method.

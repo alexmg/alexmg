@@ -2,7 +2,7 @@ Title: "Compute any hash for any object in C#"
 Published: 2009-04-16 01:36:00
 RedirectFrom: compute-any-hash-for-any-object-in-c
 Tags:
-  - c
+  - c#
 ---
 ## Approach
 

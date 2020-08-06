@@ -2,7 +2,7 @@ Title: "CodeDomProvider and Compiler Warning Levels"
 Published: 2010-09-01 01:43:54
 RedirectFrom: codedomprovider-and-compiler-warning-levels
 Tags:
-  - c
+  - c#
   - codedom
 ---
 When generating code using the `CodeDomProvider` you may noticed that by default you do not get the same warning messages in the `CompilerResults` that you receive when compiling in Visual Studio. For example, lets take the simple code below that has a static method with two unused variables.

@@ -2,7 +2,7 @@ Title: "Getting the Windows Product ID using WMI"
 Published: 2010-09-21 02:29:09
 RedirectFrom: getting-the-windows-product-id-using-wmi
 Tags:
-  - c
+  - c#
   - windows
   - wmi
 ---

@@ -2,7 +2,7 @@ Title: "Two simple tips for working with LINQ and IEnumerable<T>"
 Published: 2012-04-05 02:23:02
 RedirectFrom: two-tips-for-working-with-linq-and-ienumerablelttgt
 Tags:
-  - c
+  - c#
   - linq
 ---
 Meet the test subject
