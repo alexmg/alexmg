@@ -2,9 +2,14 @@
     <div class="container">
         <div class="row">
                 <div class="col-md-12 text-center">
+                    @if (Document.ContainsKey("Canonical"))
+                    {
+                        <p class="text-center small text-muted">Originally published at <a href="@Document.GetString("Canonical")">@Document.GetString("Canonical")</a>.</p>
+                        <br />
+                    }
                     @Html.Partial("_social-links")
                     <br />
-                    <p class="copyright text-muted m-0">Copyright © @DateTime.Now.Year by @Document.GetString("SiteTitle")</p>
+                    <p class="copyright text-muted m-0">@Document.GetString(WebKeys.Copyright)</p>
                     <br />
                     <ul class="list-inline text-center small">
                         @{
