@@ -6,3 +6,4 @@ LinksUseHttps: true
 NetlifyRedirects: true
 MetaRefreshRedirects: false
 Image: /img/header.jpg
+GenerateSearchIndex: true
