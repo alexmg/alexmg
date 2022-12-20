@@ -9,6 +9,6 @@ Congratulations to [Christian](http://blogs.thinktecture.com/cweyer/) and [Buddh
 
 The diagram below was created for the article, and Christian has also put it on the WSCF.blue homepage on [CodePlex](http://www.codeplex.com/).
 
-[![The schema-first approach has five discrete steps.](/posts/images/Schema-first-thumb.png "The schema-first approach has five discrete steps.")](/posts/images/Schema-first.png)
+![The schema-first approach has five discrete steps.](/posts/images/Schema-first.png)
 
 I really like this diagram, it paints a picture that is very clear and easy to understand. It shows that there is a sequence of steps that are undertaken when doing contract-first development, and highlights that this entire sequence becomes an iterative process. Well done guys!

@@ -5,7 +5,7 @@ Tags:
   - web-services
   - wscf
 ---
-[![image](/posts/images/WSCF-logo-thumb.png "image")](/posts/images/WSCF-logo.png)
+![image](/posts/images/WSCF-logo.png)
 
 The team is very pleased to announce that [WSCF.blue](http://wscfblue.codeplex.com/) has achieved the important V1 milestone. Thank you to everyone who provided feedback in the form of suggestions and bug reports. This input has really helped us improve the stability of WSCF.blue and increase the available feature set. It has also given us many other good ideas that will no doubt be rolled into future releases.
 

@@ -13,11 +13,11 @@ Defining fault messages in your WSDL can be a little different to defining your 
 
 When you select an operation in the tree control a link label is displayed in the properties pane. Clicking the link will add a new fault message to the operation.
 
-[![Operation Properties](/posts/images/Operation-Properties-thumb.png "Operation Properties")](/posts/images/Operation-Properties.png)
+![Operation Properties](/posts/images/Operation-Properties.png)
 
 When you select the fault message in the tree control you can then select a type from your schema to be used as the message body. You must provide a name for the message and that name must be unique to the operation. It does not have to be unique to the entire contract though. This means that you can reuse the same message name for a different operation and only a single message will be added to the WSDL. There is also a link label that allows you to remove the fault message if required.
 
-[![Fault Message Properties](/posts/images/Fault-Message-Properties-thumb.png "Fault Message Properties")](/posts/images/Fault-Message-Properties.png)
+![Fault Message Properties](/posts/images/Fault-Message-Properties.png)
 
 Lets use the fault message being configured in the screen capture above as an example of how this fits together in regards to the XSD and WSDL. The type for the fault in the XSD is called customFault and is an explicitly named `complexType`.
 

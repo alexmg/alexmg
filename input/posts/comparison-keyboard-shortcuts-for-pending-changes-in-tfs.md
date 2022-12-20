@@ -5,7 +5,7 @@ Tags:
   - tfs
   - visual-studio
 ---
-[![Logitech MX5500](/posts/images/Keyboard-thumb.png "Logitech MX5500")](/posts/images/Keyboard.png)
+![Logitech MX5500](/posts/images/Keyboard.png)
 
 One of the first things I configured in my Visual Studio environment when I starting using TFS was keyboard shortcuts to make comparing my pending changes easier. I find having to right-click on each item in the **Pending Changes** window and navigate through the context menu to
 perform a comparison quickly tests my patience. The drop down menu on the tool bar button is slightly faster but still not quick enough for my liking. I am always fastest when my hands don’t need to leave the keyboard.

@@ -13,14 +13,14 @@ The generated data contract types are designed to work with the `XmlSerializer`.
 
 To generate data contracts start by selecting the required XSD or WSDL file in your project. You can select one or more files as required.
 
-[![Source XSD files.](/posts/images/Solution-Explorer-thumb.png "Source XSD files.")](/posts/images/Solution-Explorer.png)
+![Source XSD files.](/posts/images/Solution-Explorer.png)
 
 Right-click your selection and choose **Generate Data Contract Code...**from the context menu.
 
-[![Generate Data Contract Code...](/posts/images/Generate-Data-Contract-Code-thumb.png "Generate Data Contract Code...")](/posts/images/Generate-Data-Contract-Code.png)
+![Generate Data Contract Code...](/posts/images/Generate-Data-Contract-Code.png)
 
 You will be presented with the **Data Contract Code Generation Options** dialog.
 
-[![Data Contact Code Generation Options](/posts/images/Generation-Options-dialog-thumb.png "Data Contact Code Generation Options")](/posts/images/Generation-Options-dialog.png)
+![Data Contact Code Generation Options](/posts/images/Generation-Options-dialog.png)
 
 You can choose to create a separate file for each type or keep them all in a single file. The usual list of **Code generation options** are also available. Click **Generate** and enjoy your data contracts!

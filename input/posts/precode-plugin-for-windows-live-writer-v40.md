@@ -11,6 +11,6 @@ v2.0 markup and options. The HTML that SyntaxHighlighter uses to identify code s
 
 The UI of PreCode has also been given an update and is looking very nice indeed.
 
-[![The updated PreCode UI.](/posts/images/PreCode-UI-thumb.png "The updated PreCode UI.")](/posts/images/PreCode-UI.png)
+![The updated PreCode UI.](/posts/images/PreCode-UI.png)
 
 Another cool feature [Anthony Bouch](http://www.58bits.com/) has added is the ability to run PreCode as a standalone Windows desktop application. Thanks to Anthony for keeping this great plugin alive and kicking.

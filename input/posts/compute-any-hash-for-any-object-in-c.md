@@ -18,7 +18,7 @@ As I mentioned before, there are many of these providers available in the .NET F
 
 There are two abstract base classes defined for these two types of hashing functions: the `HashAlgorithm` and `KeyedHashAlgorithm` classes. The main difference is that the `KeyedHashAlgorithm` class has a `Key` property that can be used to set the secret key.
 
-[![The HashAlgorithm and KeyedHashAlgorithm types.](/posts/images/Algorithm-types-thumb.png "The HashAlgorithm and KeyedHashAlgorithm types.")](/posts/images/Algorithm-types.png)
+![The HashAlgorithm and KeyedHashAlgorithm types.](/posts/images/Algorithm-types.png)
 
 Classes that derive from `KeyedHashAlgorithm` often have a constructor that excepts the key as a byte array, but this is for convenience only, and the property can be set at any time. This will make life easier when it comes to implementing support for the two types of hash functions.
 

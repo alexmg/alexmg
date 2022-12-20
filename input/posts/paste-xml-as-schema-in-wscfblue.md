@@ -15,7 +15,7 @@ Imagine that you have an application that passes XML documents around via the fi
 
 The new feature appears as the **Paste XML as Schema** menu item on the **Edit** menu in Visual Studio. The menu item will only be enabled if a project is currently open and selected. You may notice in the screen capture that the menu items looks suspiciously familiar, maybe even to a neighbouring menu item.
 
-[![Paste XML as Schema Menu Item](/posts/images/Paste-XML-as-Schema-thumb.png "Paste XML as Schema Menu Item")](/posts/images/Paste-XML-as-Schema.png)
+![Paste XML as Schema Menu Item](/posts/images/Paste-XML-as-Schema.png)
 
 WSCF.blue will ensure the text in your clipboard is valid XML before inferring the schema. The paste operation actually adds a new file into your project and does not paste the XSD directly into the active editor window. I know that is a little strange for a paste operation that corresponds to a text formatted copy operation, but think of it as pasting a magically created file into your project. Your new XSD file will be named the same as the root element in the XML. For example, performing the paste with the XML below in your clipboard:
 

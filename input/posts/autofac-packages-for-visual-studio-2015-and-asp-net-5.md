@@ -25,4 +25,4 @@ There are abstractions for a number of cross-cutting concerns including logging,
 
 ## Getting started
 
-There are no breaking changes in the exposed interface so the steps outlined in my previous [post](http://alexmg.com/autofac-4-0-alpha-1-for-asp-net-5-0-beta-3/) will work with beta5. The only difference is that you will need to use the `Autofac.Framework.DependencyInjection` package and namespace instead of `Autofac.Dnx`. We are going to start adding documentation about ASP.NET 5 to the [documentation](docs.autofac.org) site so keep your eye out for that.
+There are no breaking changes in the exposed interface so the steps outlined in my previous [post](http://alexmg.com/autofac-4-0-alpha-1-for-asp-net-5-0-beta-3/) will work with beta5. The only difference is that you will need to use the `Autofac.Framework.DependencyInjection` package and namespace instead of `Autofac.Dnx`. We are going to start adding documentation about ASP.NET 5 to the [documentation](https://docs.autofac.org) site so keep your eye out for that.

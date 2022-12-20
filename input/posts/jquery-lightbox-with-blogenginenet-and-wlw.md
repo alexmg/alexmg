@@ -42,8 +42,8 @@ The script identifies all the `div` tags with a class of text, that contain anch
 
 With only a little bit of effort we can keep our HTML clean and get the cool Lightbox effect as well. Below are some sample images you can test out to get a feel for the effect. You will notice that each image has a description and that you can navigate through them as a group.
 
- [![Road at night with bulb shutter-speed.](/posts/images/Road-at-night-thumb.jpg "Road at night with bulb shutter-speed.")](/posts/images/Road-at-night.jpg)
+![Road at night with bulb shutter-speed.](/posts/images/Road-at-night.jpg)
 
- [![View over the mountain tops.](/posts/images/View-over-the-mountain-tops-thumb.jpg "View over the mountain tops.")](/posts/images/View-over-the-mountain-tops.jpg)
+![View over the mountain tops.](/posts/images/View-over-the-mountain-tops.jpg)
 
-[![Seashore that needs some sand.](/posts/images/Seashore-that-needs-some-sand-thumb.jpg "Seashore that needs some sand.")](/posts/images/Seashore-that-needs-some-sand.jpg)
+![Seashore that needs some sand.](/posts/images/Seashore-that-needs-some-sand.jpg)

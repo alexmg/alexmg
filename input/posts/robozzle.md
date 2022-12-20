@@ -8,4 +8,4 @@ The next time you have a few minutes downtime be sure to check out [RoboZZle](ht
 
 If your super keen you can keep up with the latest RoboZZle happenings on the [blog](http://robozzle.com/blog/) and [forums](http://robozzle.com/forums/). Here is a screen capture taken from the blog to give you a feel for it.
 
-[![The RoboZZle Designer](/posts/images/RoboZZle-Designer-thumb.png "The RoboZZle Designer")](/posts/images/RoboZZle-Designer.png)
+![The RoboZZle Designer](/posts/images/RoboZZle-Designer.png)

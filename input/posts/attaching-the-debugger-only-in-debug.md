@@ -35,6 +35,6 @@ If you run the code below in Debug mode with the debugger attached, a breakpoint
 
 When the debugger is not attached and you compiled in Debug mode, the Visual Studio Just-In-Time Debugger dialog is presented for you to selected a debugger to attach with.
 
-[![Visual Studio Just-In-Time Debugger Dialog](/posts/images/JIT-Debugger-Dialog-thumb.png "Visual Studio Just-In-Time Debugger Dialog")](/posts/images/JIT-Debugger-Dialog.png)
+[![Visual Studio Just-In-Time Debugger Dialog](/posts/images/JIT-Debugger-Dialog.png)
 
 If you run in Release mode no breakpoint will be hit when the debugger is attached, and the Visual Studio Just-In-Time Debugger dialog will not be presented when you run without the debugger attached.

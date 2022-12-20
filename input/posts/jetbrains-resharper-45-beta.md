@@ -10,6 +10,6 @@ The ReSharper 4.5 Beta is now available for [download](http://www.jetbrains.com/
 
 I didn’t have any problems with the installer which is always nice as the installer is technically a Beta version as well. The old version was removed and the new installed without issue.
 
-[![ReSharper Setup Completed](/posts/images/ReSharper-setup-completed-thumb.png "ReSharper Setup Completed")](/posts/images/ReSharper-setup-completed.png) 
+![ReSharper Setup Completed](/posts/images/ReSharper-setup-completed.png)
 
 Time to take her for a test drive...

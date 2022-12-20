@@ -18,7 +18,7 @@ When generating code using the `CodeDomProvider` you may noticed that by default
 
 The code above when compiled in Visual Studio will result in two warning messages appearing in the **Error List** window.
 
-[![Warnings in Error List](/posts/images/Error-list-thumb.png "Warnings in Error List")](/posts/images/Error-list.png)
+![Warnings in Error List](/posts/images/Error-list.png)
 
 On the CodeDOM side we can confirm with a simple unit test that the default value for `CompilerParameters.WarningLevel` does not cause the two warnings to be returned when the same code is compiled with the `CodeDomProvider`.
 
@@ -44,7 +44,7 @@ On the CodeDOM side we can confirm with a simple unit test that the default valu
 
 If you check the **Build** tab in the **Properties** window for a new project in Visual Studio you can see that the default warning level is 4.
 
-[![Default Warning Level](/posts/images/Default-Warning-Level-thumb.png "Default Warning Level")](/posts/images/Default-Warning-Level.png)
+![Default Warning Level](/posts/images/Default-Warning-Level.png)
 
 The MSDN [documentation](http://msdn.microsoft.com/en-us/library/13b90fz7(VS.71).aspx) tells us that the valid warning levels are 0 through 4.
 

@@ -4,7 +4,7 @@ RedirectFrom: autofac-aspnet-mvc-4-beta-integration
 Tags:
   - autofac
 ---
-Following the release of [Autofac 2.6.1](v), the Autofac MVC 4 Beta integration is now ready for [downloading via NuGet](https://nuget.org/packages/Autofac.Mvc4/). I will look into what additional features might be possible later, but the immediate priority was to make something available ensuring people could starting enjoying Autofac with MVC 4 Beta. This work is currently being done in a branch and will be merged back into the mainline once the final RTW of MVC 4 is made available.
+Following the release of [Autofac 2.6.1](https://github.com/autofac/Autofac/releases/tag/v3.5.2), the Autofac MVC 4 Beta integration is now ready for [downloading via NuGet](https://nuget.org/packages/Autofac.Mvc4/). I will look into what additional features might be possible later, but the immediate priority was to make something available ensuring people could starting enjoying Autofac with MVC 4 Beta. This work is currently being done in a branch and will be merged back into the mainline once the final RTW of MVC 4 is made available.
 
 [![Install-Package Autofac.Mvc4](/posts/images/Install-Package-Autofac.Mvc4.png "Install-Package Autofac.Mvc4")](https://nuget.org/packages/Autofac.Mvc4/2.6.1.841)
 

@@ -83,7 +83,7 @@ And make them look like this instead.
 
 Nothing particularly difficult in this task other than a fair dose of pounding on the keyboard. After creating the first couple of patterns using the Pattern Catalogue dialog in Visual Studio, I exported the patterns to an XML file and continued my editing from there. Working directly with the XML in your favourite editor will certainly save you some time when making edits to your patterns in bulk. The end result was the list of code patterns below.
 
-[![Pattern Catalogue](/posts/images/Pattern-Catalogue-thumb.png "Pattern Catalogue")](/posts/images/Pattern-Catalogue.png)
+![Pattern Catalogue](/posts/images/Pattern-Catalogue.png)
 
 Now ReSharper will include these code patterns into its code inspections, and show the usual visual indicators for the Suggestion severity level.
 
