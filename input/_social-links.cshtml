@@ -12,7 +12,7 @@
     @foreach (var link in links)
     {
         <div class="col-xs mt-3">
-            <a href="@link.Url" title="@link.Title" data-toggle="tooltip" data-animate="true" data-delay='{"show":"500", "hide":"0"}'>
+            <a href="@link.Url" rel="me" title="@link.Title" data-toggle="tooltip" data-animate="true" data-delay='{"show":"500", "hide":"0"}'>
                 <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="@link.Icon fa-stack-1x fa-inverse"></i>
