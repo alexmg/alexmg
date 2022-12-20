@@ -21,3 +21,8 @@
   to = "https://alexmg.dev/posts/:splat"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/.well-known/webfinger"
+  to = "https://hachyderm.io/.well-known/webfinger?resource=acct:alexmg@hachyderm.io"
+  status = 200
